@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday 🎉</title>
+
+<style>
+body{
+background:pink;
+text-align:center;
+font-family:Arial;
+}
+
+h1{
+color:white;
+font-size:40px;
+}
+
+button{
+padding:12px 20px;
+font-size:18px;
+border:none;
+border-radius:20px;
+background:#ff4d88;
+color:white;
+margin:10px;
+cursor:pointer;
+}
+
+img{
+width:200px;
+margin:10px;
+border-radius:15px;
+box-shadow:0 0 10px white;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>🎉 Happy Birthday da alagan🎉</h1>
+
+<p>Wishing you a day filled with happiness and laughter 💗</p>
+<button onclick="playSong()">▶ Play Song</button>
+<div id="spotifyPlayer" style="display:none; margin-top:20px;">
+
+<iframe style="border-radius:12px"
+ src="https://open.spotify.com/embed/track/49kvR4GkxBfMLSqR7HNMu7?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>"
+width="300"
+height="80"
+frameborder="0"
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+
+</div>
+
+<h2>📷 Memories</h2>
+
+<div class="gallery">
+
+<img src="https://i.ibb.co/7tKKh6XL/IMG-20260312-210809-149.jpg">
+
+<img src="https://i.ibb.co/W456JhS7/IMG-20260312-210918-319.jpg">
+
+<img src="https://i.ibb.co/YFs84kyB/IMG-20260312-210802-913.jpg">
+
+</div>
+
+<h2>💌 Special Message</h2>
+
+<p>
+You are not just my friend, you are one of the best memories in my life.  
+Thank you for always being there.  
+Happy Birthday and stay happy always! 🎉
+</p>
+
+<h2>🎂 Cut the Cake</h2>
+
+<div id="cake" onclick="cutCake()" style="font-size:100px; cursor:pointer;">
+🎂
+</div>
+
+<p id="cakeMessage"></p>
+
+<script>
+function playSong()
+{
+document.getElementById("spotifyPlayer").style.display="block";
+}
+function cutCake()
+{
+
+document.getElementById("cake").innerHTML="🍰";
+
+document.getElementById("cakeMessage").innerHTML="🎉 Cake Cut! Happy Birthday! 🎉";
+
+}
+
+
+</script>
+
+</body>
+</html>
